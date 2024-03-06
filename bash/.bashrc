@@ -88,4 +88,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export LESSOPEN='|bat --paging=never --color=always %s'
 export LESS='-R'
 
+# Load the .inputrc file (not sure why this is needed)
+bind -f "~/.inputrc"
+
+# Set vi mode in the shell
+set -o vi
 # vim: ts=4 sts=4 sw=4 tw=80 cc=80 spell et
