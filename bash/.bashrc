@@ -81,8 +81,6 @@ export EDITOR=nvim
 export PAGER=bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export TERM='screen-256color'
-
-#Export Functions
 export -f vi
 export PATH="$HOME/.local/bin:$PATH"
 #export LESSOPEN="| grep -P 'alias|$' --color=always %s"
