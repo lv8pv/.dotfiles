@@ -1,0 +1,46 @@
+live_config_reload = true
+working_directory = "/home/lv8pv"
+
+[font]
+size = 8
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack"
+style = "Italic"
+
+[font.normal]
+family = "Hack"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 2
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[shell]
+program = "/bin/bash"
+
+[window]
+decorations = "none"
+dynamic_title = true
+opacity = 1.0
+title = "Alacritty"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 0
+y = 0
