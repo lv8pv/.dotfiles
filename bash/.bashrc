@@ -80,7 +80,8 @@ export VISUAL=nvim
 export EDITOR=nvim
 export PAGER=bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export TERM='screen-256color'
+# export TERM=screen-256color
+export TERM=xterm-color
 export -f vi
 export PATH="$HOME/.local/bin:$PATH"
 #export LESSOPEN="| grep -P 'alias|$' --color=always %s"
@@ -90,7 +91,7 @@ export LESS='-R'
 
 # Load the .inputrc file (not sure why this is needed)
 bind -f "~/.inputrc"
-
+#
 # Set vi mode in the shell
-set -o vi
+# set -o vi
 # vim: ts=4 sts=4 sw=4 tw=80 cc=80 spell et
