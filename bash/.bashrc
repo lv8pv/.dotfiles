@@ -61,6 +61,9 @@ alias cal='cal -m'
 alias cat="bat --paging=never -pp --style='plain' $*"
 #alias cat="bat --paging=never -pp --style='plain' --theme=TwoDark $*"
 
+# GIT aliases
+alias gl="git log --all --graph"
+
 hash nc >/dev/null 2>&1 && alias pastebin='nc termbin.com 9999'
 hash grep >/dev/null 2>&1 && alias egrep='grep -E --color=auto'
 hash grep >/dev/null 2>&1 && alias fgrep='grep -F --color=auto'
