@@ -63,6 +63,7 @@ alias cat="bat --paging=never -pp --style='plain' $*"
 
 # GIT aliases
 alias gl="git log --all --graph"
+alias gis="git status"
 
 hash nc >/dev/null 2>&1 && alias pastebin='nc termbin.com 9999'
 hash grep >/dev/null 2>&1 && alias egrep='grep -E --color=auto'
