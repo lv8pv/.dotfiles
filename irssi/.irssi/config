@@ -16,51 +16,6 @@ servers = (
     tls_verify = "no";
     autoconnect = "yes";
     starttls = "yes";
-  },
-  {
-    address = "irc.eu.libera.chat";
-    chatnet = "LiberaChat";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
-    autoconnect = "yes";
-    starttls = "yes";
-  },
-  {
-    address = "irc.eu.libera.chat";
-    chatnet = "LiberaChat";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
-    autoconnect = "yes";
-    starttls = "yes";
-  },
-  {
-    address = "irc.eu.libera.chat";
-    chatnet = "LiberaChat";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
-    autoconnect = "yes";
-    starttls = "yes";
-  },
-  {
-    address = "irc.eu.libera.chat";
-    chatnet = "LiberaChat";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
-    autoconnect = "yes";
-    starttls = "yes";
-  },
-  {
-    address = "irc.eu.libera.chat";
-    chatnet = "LiberaChat";
-    port = "6667";
-    use_tls = "no";
-    tls_verify = "no";
-    autoconnect = "yes";
-    starttls = "yes";
   }
 );
 channels = (
