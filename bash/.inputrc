@@ -17,10 +17,10 @@ set show-mode-in-prompt on
 #     4: steady underline
 #     5: blinking bar (xterm)
 #     6: steady bar (xterm)
+# set vi-ins-mode-string \1\e[00;34m\2(ins)\1\e[0m\2
+# set vi-cmd-mode-string \1\e[04;31m\2(cmd)\1\e[0m\2
 set vi-ins-mode-string \1\e[00;34m\2(ins)\1\e[0m\2
-set vi-cmd-mode-string \1\e[04;31m\2(cmd)\1\e[0m\2
-# set vi-ins-mode-string (ins)\1\e[5 q\2
-# set vi-cmd-mode-string (cmd)\1\e[1 q\2
+set vi-cmd-mode-string \1\e[01;31m\2(cmd)\1\e[0m\2
 # # txtblk='\e[0;30m' # Black - Regular
 # txtred='\e[0;31m' # Red
 # txtgrn='\e[0;32m' # Green
@@ -54,3 +54,15 @@ set vi-cmd-mode-string \1\e[04;31m\2(cmd)\1\e[0m\2
 # bakcyn='\e[46m'   # Cyan
 # bakwht='\e[47m'   # White
 # txtrst='\e[0m'    # Text Reset
+# Enable coloured tab-completion.
+set colored-completion-prefix on
+set colored-stats on
+
+# Enable 8 bit input.
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# Some nice options
+set mark-symlinked-directories on
+set visible-stats on
