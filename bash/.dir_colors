@@ -1,0 +1,500 @@
+# Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the --color option.
+#
+# This file goes in the /etc directory, and must be world readable.
+# You can copy this file to .dir_colors in your $HOME directory to override
+# the system defaults.
+
+# Below, there should be one TERM entry for each termtype that is colourisable
+TERM Eterm
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM eterm-color
+TERM gnome
+TERM gnome-256color
+TERM jfbterm
+TERM konsole
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM rxvt
+TERM rxvt-256color
+TERM rxvt-cygwin
+TERM rxvt-cygwin-native
+TERM rxvt-unicode
+TERM rxvt-unicode-256color
+TERM rxvt-unicode256
+TERM screen
+TERM screen-256color
+TERM screen-256color-bce
+TERM screen-bce
+TERM screen-w
+TERM screen-linux
+TERM screen.linux
+TERM screen.rxvt
+TERM terminator
+TERM vt100
+TERM xterm
+TERM xterm-16color
+TERM xterm-256color
+TERM xterm-88color
+TERM xterm-color
+TERM xterm-debian
+
+# Below are the colour init strings for the basic file types. A colour init
+# string consists of one or more of the following numeric codes:
+# Attribute codes: 
+#	00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text colour codes:
+#	30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background colour codes:
+#	40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+NORMAL			00	# Global default.
+FILE			00	# Normal file.
+DIR			01;34	# Directory.
+LINK			01;36	# Symbolic link.  Set to 'target' instead of a
+				# value for the colour of the file pointed to.
+ORPHAN			00;31	# Symlink where target file does not exist.
+MISSING			00;31	# Non-existant target file of a symlink.
+FIFO			00;33	# Pipe.
+SOCK			00;35	# Socket.
+DOOR			00;35	# Door (Solaris).
+BLK			00;33	# Block device.
+CHR			00;33	# Character device.
+EXEC			01;32	# File with any execute permission (+x).
+SETUID		     01;32;41	# File is setuid (u+s).
+SETGID		     01;32;45	# File is setgid (g+s).
+STICKY			34;42	# Dir is not other-writable and sticky (o-w,+t).
+STICKY_OTHER_WRITABLE	34;45	# Dir is other-writable and sticky (o+w,+t).
+OTHER_WRITABLE		34;41	# Dir is other-writable (o+w).
+CAPABILITY	     01;32;44	# File is not setuid/setgid (ug-s) but has a
+				# limited privileged capability set configured.
+
+# File extensions that should be colourised.
+# Archives (bright red).
+.7z	01;31
+.7Z	01;31
+.ace	01;31
+.ACE	01;31
+.arj	01;31
+.ARJ	01;31
+.bz2	01;31
+.BZ2	01;31
+.cab	01;31
+.CAB	01;31
+.cpio	01;31
+.CPIO	01;31
+.deb	01;31
+.DEB	01;31
+.dpkg	01;31
+.DPKG	01;31
+.dz	01;31
+.DZ	01;31
+.gz	01;31
+.GZ	01;31
+.jar	01;31
+.JAR	01;31
+.lha	01;31
+.LHA	01;31
+.lz	01;31
+.LZ	01;31
+.lzh	01;31
+.LZH	01;31
+.lzma	01;31
+.LZMA	01;31
+.rpm	01;31
+.RPM	01;31
+.rar	01;31
+.RAR	01;31
+.rz	01;31
+.RZ	01;31
+.sit	01;31
+.SIT	01;31
+.sitx	01;31
+.SITX	01;31
+.srpm	01;31
+.SRPM	01;31
+.tar	01;31
+.TAR	01;31
+.taz	01;31
+.TAZ	01;31
+.tb2	01;31
+.TB2	01;31
+.tbz2	01;31
+.TBZ2	01;31
+.tbz	01;31
+.TBZ	01;31
+.tgz	01;31
+.TGZ	01;31
+.tlz	01;31
+.TLZ	01;31
+.trz	01;31
+.TRZ	01;31
+.txz	01;31
+.TXZ	01;31
+.tz	01;31
+.TZ	01;31
+.tz2	01;31
+.TZ2	01;31
+.tzst	01;31
+.TZST	01;31
+.xz	01;31
+.XZ	01;31
+.z	01;31
+.Z	01;31
+.zip	01;31
+.ZIP	01;31
+.zoo	01;31
+.ZOO	01;31
+.zst	01;31
+.ZST	01;31
+
+# Images (bright magenta).
+.bmp	01;35
+.BMP	01;35
+.gif	01;35
+.GIF	01;35
+.ico	01;35
+.ICO	01;35
+.jpg	01;35
+.JPG	01;35
+.jpeg	01;35
+.JPEG	01;35
+.pbm	01;35
+.PBM	01;35
+.pcx	01;35
+.PCX	01;35
+.pgm	01;35
+.PGM	01;35
+.png	01;35
+.PNG	01;35
+.pnm	01;35
+.PNM	01;35
+.ppm	01;35
+.PPM	01;35
+.psd	01;35
+.PSD	01;35
+.rgb	01;35
+.RGB	01;35
+.svg	01;35
+.SVG	01;35
+.svgz	01;35
+.SVGZ	01;35
+.tga	01;35
+.TGA	01;35
+.tif	01;35
+.TIF	01;35
+.tiff	01;35
+.TIFF	01;35
+.xbm	01;35
+.XBM	01;35
+.xcf	01;35
+.XCF	01;35
+.xpm	01;35
+.XPM	01;35
+.xwd	01;35
+.XWD	01;35
+
+# Video (bright yellow).
+.3gp	01;33
+.3GP	01;33
+.3g2	01;33
+.3G2	01;33
+.asf	01;33
+.ASF	01;33
+.asx	01;33
+.ASX	01;35
+.avi	01;33
+.AVI	01;33
+.axv	01;33
+.AXV	01;33
+.h261	01;33
+.H261	01;33
+.h263	01;33
+.H263	01;33
+.h264	01;33
+.H264	01;33
+.jpgm	01;33
+.JPGM	01;33
+.jpgv	01;33
+.JPGV	01;33
+.jpm	01;33
+.JPM	01;33
+.m1v	01;33
+.M1V	01;33
+.m2v	01;33
+.M2V	01;33
+.m4v	01;33
+.M4V	01;33
+.mkv	01;33
+.MKV	01;33
+.mov	01;33
+.MOV	01;33
+.mp4	01;33
+.MP4	01;33
+.mp4s	01;33
+.MP4S	01;33
+.mp4v	01;33
+.MP4V	01;33
+.mpe	01;33
+.MPE	01;33
+.mpeg	01;33
+.MPEG	01;33
+.mpg	01;33
+.MPG	01;33
+.mpg4	01;33
+.MPG4	01;33
+.nuv	01;33
+.NUV	01;33
+.ogv	01;33
+.OGV	01;33
+.ogx	01;33
+.OGX	01;33
+.qt	01;33
+.QT	01;33
+.rm	01;33
+.RM	01;33
+.ts     01;33
+.TS     01;33
+.vob	01;33
+.VOB	01;33
+.wm	01;33
+.WM	01;33
+.wmv	01;33
+.WMV	01;33
+.wmx	01;33
+.WMX	01;33
+.wvx	01;33
+.WVX	01;33
+
+# Audio (bright yellow).
+.aac	01;33
+.AAC	01;33
+.aif	01;33
+.AIF	01;33
+.aiff	01;33
+.AIFF	01;33
+.anx	01;33
+.ANX	01;33
+.au	01;33
+.AU	01;33
+.axa	01;33
+.AXA	01;33
+.flac	01;33
+.FLAC	01;33
+.flv	01;33
+.FLV	01;33
+.m2a	01;33
+.M2A	01;33
+.m2t	01;33
+.M2T	01;33
+.m4a	01;33
+.M4A	01;33
+.m4p	01;33
+.M4P	01;33
+.mid	01;33
+.MID	01;33
+.midi	01;33
+.MIDI	01;33
+.mka	01;33
+.MKA	01;33
+.mpa	01;33
+.MPA	01;33
+.m2a	01;33
+.M2A	01;33
+.m3a	01;33
+.M3A	01;33
+.mpc	01;33
+.MPC	01;33
+.mp2	01;33
+.MP2	01;33
+.mp2a	01;33
+.MP2A	01;33
+.mp3	01;33
+.MP3	01;33
+.mp4a	01;33
+.MP4A	01;33
+.mpga	01;33
+.MPGA	01;33
+.oga	01;33
+.OGA	01;33
+.ogg	01;33
+.OGG	01;33
+.opus	01;33
+.OPUS	01;33
+.ra	01;33
+.RA	01;33
+.ram	01;33
+.RAM	01;33
+.spx	01;33
+.SPX	01;33
+.wav	01;33
+.WAV	01;33
+.webm	01;33
+.WEBM	01;33
+.webp	01;33
+.WEBP	01;33
+.wma	01;33
+.WMA	01;33
+
+# Documents (bright white).
+.csv	01;37
+.CSV	01;37
+.doc	01;37
+.DOC	01;37
+.docx	01;37
+.DOCX	01;37
+.dot	01;37
+.DOT	01;37
+.dotx	01;37
+.DOTX	01;37
+.eps	01;37
+.EPS	01;37
+.latex	01;37
+.LATEX	01;37
+.mdb	01;37
+.MDB	01;37
+.odb	01;37
+.ODB	01;37
+.odc	01;37
+.ODC	01;37
+.odf	01;37
+.ODF	01;37
+.odft	01;37
+.ODFT	01;37
+.odg	01;37
+.ODG	01;37
+.odi	01;37
+.ODI	01;37
+.odm	01;37
+.ODM	01;37
+.odp	01;37
+.ODP	01;37
+.ods	01;37
+.ODS	01;37
+.odt	01;37
+.ODT	01;37
+.otc	01;37
+.OTC	01;37
+.otg	01;37
+.OTG	01;37
+.oth	01;37
+.OTH	01;37
+.oti	01;37
+.OTI	01;37
+.otm	01;37
+.OTM	01;37
+.otp	01;37
+.OTP	01;37
+.ots	01;37
+.OTS	01;37
+.ott	01;37
+.OTT	01;37
+.pot	01;37
+.POT	01;37
+.potx	01;37
+.POTX	01;37
+.pdf	01;37
+.PDF	01;37
+.pps	01;37
+.PPS	01;37
+.ppsx	01;37
+.PPSX	01;37
+.ppt	01;37
+.PPT	01;37
+.pptx	01;37
+.PPTX	01;37
+.ps	01;37
+.PS	01;37
+.pub	01;37
+.PUB	01;37
+.rtf	01;37
+.RTF	01;37
+.rtx	01;37
+.RTX	01;37
+.sda	01;37
+.SDA	01;37
+.sdc	01;37
+.SDC	01;37
+.sdd	01;37
+.SDD	01;37
+.sdw	01;37
+.SDW	01;37
+.sgl	01;37
+.SGL	01;37
+.sldx	01;37
+.SLDX	01;37
+.smf	01;37
+.SMF	01;37
+.stc	01;37
+.STC	01;37
+.std	01;37
+.STD	01;37
+.sti	01;37
+.STI	01;37
+.stm	01;37
+.STM	01;37
+.stw	01;37
+.STW	01;37
+.sxc	01;37
+.SXC	01;37
+.sxd	01;37
+.SXD	01;37
+.sxg	01;37
+.SXG	01;37
+.sxi	01;37
+.SXI	01;37
+.sxm	01;37
+.SXM	01;37
+.sxw	01;37
+.SXW	01;37
+.tex	01;37
+.TEX	01;37
+.tsv	01;37
+.TSV	01;37
+.vor	01;37
+.VOR	01;37
+.wcm	01;37
+.WCM	01;37
+.wdb	01;37
+.WDB	01;37
+.wks	01;37
+.WKS	01;37
+.wps	01;37
+.WPS	01;37
+.wri	01;37
+.WRI	01;37
+.xla	01;37
+.XLA	01;37
+.xlc	01;37
+.XLC	01;37
+.xlm	01;37
+.XLM	01;37
+.xls	01;37
+.XLS	01;37
+.xlsx	01;37
+.XLSX	01;37
+.xlt	01;37
+.XLT	01;37
+.xltx	01;37
+.XLTX	01;37
+.xlw	01;37
+.XLW	01;37
+
