@@ -16,6 +16,15 @@ servers = (
     tls_verify = "no";
     autoconnect = "yes";
     starttls = "yes";
+  },
+  {
+    address = "irc.eu.libera.chat";
+    chatnet = "LiberaChat";
+    port = "6667";
+    use_tls = "no";
+    tls_verify = "no";
+    autoconnect = "yes";
+    starttls = "yes";
   }
 );
 channels = (
@@ -414,3 +423,9 @@ ignores = (
   { level = "JOINS PARTS QUITS"; }
 );
 logs = { };
+keyboard = (
+  { key = "meta-h"; id = "previous_window"; data = ""; },
+  { key = "meta-l"; id = "next_window"; data = ""; },
+  { key = "mh"; id = "previous_window"; data = ""; },
+  { key = "ml"; id = "previous_window"; data = ""; }
+);
