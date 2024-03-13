@@ -9,8 +9,13 @@ __prompt_git_status() {
   #                ??                       - No upstream set.
   #                ==                       - Working tree is equal to upstream.
   #                <>                       - Divergent from upstream.
-  #                >> or >x                 - Working tree is ahead of upstream (x = commits ahead when used with next option).
-  #                << or <x                 - Working tree is behind upstream (x = commits behind when used with next option).
+  #                >> or >x                 - Working tree is ahead of upstream
+  #                                           (x = commits ahead when used with
+  #                                           next option).
+  #
+  #                << or <x                 - Working tree is behind upstream
+  #                                           (x = commits behind when used with
+  #                                           next option).
   #   GIT_PROMPT_SHOW_UPSTREAM_EXTENDED=1	In addition to upstream status, show the number of commits difference (inplies above).
   #   GIT_PROMPT_SHOW_IGNORED=1             Show a ! if the current directory is ignored, or _ if the git operation was timed out.
   #   GIT_PROMPT_SHOW_UNSTAGED=1            Show a * if there are unstaged changes (superceeded by above).
@@ -288,6 +293,7 @@ hash bat >/dev/null 2>&1 && alias cat="bat --paging=never --style='plain' -pp $*
 # GIT aliases
 hash git >/dev/null 2>&1 && alias gl="git log --all --graph"
 hash git >/dev/null 2>&1 && alias gis="git status"
+hash neomutt>/dev/null 2>&1 && alias mutt="neomutt"
 
 #alias cat="bat --paging=never -pp --style='plain' --theme=TwoDark $*"
 
