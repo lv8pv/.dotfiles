@@ -294,6 +294,7 @@ hash bat >/dev/null 2>&1 && alias cat="bat --paging=never --style='plain' -pp $*
 hash git >/dev/null 2>&1 && alias gl="git log --all --graph"
 hash git >/dev/null 2>&1 && alias gis="git status"
 hash neomutt>/dev/null 2>&1 && alias mutt="neomutt"
+alias du='du -h'
 
 #alias cat="bat --paging=never -pp --style='plain' --theme=TwoDark $*"
 
@@ -355,13 +356,17 @@ export EDITOR=nvim
 export PAGER=bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # export TERM=screen-256color
-export TERM=xterm-color
+# export TERM=xterm-color
+export TERM='xterm-256color'
 export -f vi
 export PATH="$HOME/.local/bin:$PATH"
 #export LESSOPEN="| grep -P 'alias|$' --color=always %s"
 #export LESSOPEN="|pygmentize -g %s"
 export LESSOPEN='|bat --paging=never --color=always %s'
 export LESS='-R'
+export FETCHMAILUSER="lv8pv"
+export MAILDIR=$HOME/mail
+export MANWIDTH="80"
 # I like the Default bat theme best. 
 # export BAT_THEME="gruvbox-dark"
 # export BAT_THEME="Nord"
@@ -369,6 +374,4 @@ export LESS='-R'
 # Load the .inputrc file (not sure why this is needed)
 bind -f "~/.inputrc"
 #
-# Set vi mode in the shell
-# set -o vi
 # vim: ts=4 sts=4 sw=4 tw=80 cc=80 spell et
