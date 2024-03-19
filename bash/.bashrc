@@ -280,6 +280,8 @@ hash grep >/dev/null 2>&1 && alias egrep='grep -E --color=auto'
 hash grep >/dev/null 2>&1 && alias fgrep='grep -F --color=auto'
 hash grep >/dev/null 2>&1 && alias grep='grep --color=auto'
 hash ls >/dev/null 2>&1 && alias ls='ls -p --color=auto'
+hash ls >/dev/null 2>&1 && alias ll='ls -l'
+
 # Du sorted and in MB and GB
 hash du >/dev/null 2>&1 && alias dum='du -xcms --exclude=.ccache * | sort -rn | head -n10'
 hash du >/dev/null 2>&1 && alias dug='du -xcs --block-size=1G * | sort -rn | head -n10'
@@ -302,6 +304,9 @@ alias du='du -h'
 /usr/bin/xset r rate 220 60
 # Disable the Caps lock key
 /usr/bin/setxkbmap -option "ctrl:nocaps"
+# Disable `Insert` key as it is broken and trigger when hitting `backspace`
+/usr/bin/xmodmap -e 'keycode 118 = '
+
 
 # Paste image from CLI to imagebin.ca - got this from Tadgy
 imagebin() {
@@ -359,7 +364,6 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # export TERM=xterm-color
 export TERM='xterm-256color'
 export -f vi
-export PATH="$HOME/.local/bin:$PATH"
 #export LESSOPEN="| grep -P 'alias|$' --color=always %s"
 #export LESSOPEN="|pygmentize -g %s"
 export LESSOPEN='|bat --paging=never --color=always %s'
