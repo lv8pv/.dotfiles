@@ -298,6 +298,11 @@ hash git >/dev/null 2>&1 && alias gis="git status"
 hash neomutt>/dev/null 2>&1 && alias mutt="neomutt"
 alias du='du -h'
 
+# Alias for lynx default lynx_cookies to /dev/null
+alias lynx='lynx -vikeys -accept_all_cookies -cookie_file=/dev/null'
+# When you need cookies 
+alias lynxy='lynx -vikeys -accept_all_cookies -cookie_file=~/.lynx_cookies'
+
 #alias cat="bat --paging=never -pp --style='plain' --theme=TwoDark $*"
 
 ##############################
