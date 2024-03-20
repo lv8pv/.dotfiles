@@ -29,12 +29,19 @@ servers = (
 );
 channels = (
   { name = "##slackware"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "##slackware-offtopic"; chatnet = "LiberaChat"; autojoin = "yes"; },
   { name = "#Linux"; chatnet = "LiberaChat"; autojoin = "yes"; },
-  { name = "#python"; chatnet = "LiberaChat"; autojoin = "yes"; },
-  { name = "#perl"; chatnet = "LiberaChat"; autojoin = "yes"; },
-  { name = "#neovim"; chatnet = "LiberaChat"; autojoin = "yes"; },
-  { name = "#truenas"; chatnet = "LiberaChat"; autojoin = "yes"; },
   { name = "#bash"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#git"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#neovim"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#python"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#django"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#perl"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#javascript"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#mariadb"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#neomutt"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#newsboat"; chatnet = "LiberaChat"; autojoin = "yes"; },
+  { name = "#truenas"; chatnet = "LiberaChat"; autojoin = "yes"; },
   { name = "#irssi"; chatnet = "LiberaChat"; autojoin = "yes"; }
 );
 
@@ -328,86 +335,21 @@ settings = {
 windows = {
   1 = { immortal = "yes"; name = "LOG"; level = "ALL"; };
   2 = { name = "SPELL"; };
-  3 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "##Slackware";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  4 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#Linux";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  5 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#python";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  6 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#perl";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  7 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#neovim";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  8 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#truenas";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  9 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#bash";
-        tag = "LiberaChat";
-      }
-    );
-  };
-  10 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#irssi";
-        tag = "LiberaChat";
-      }
-    );
-  };
+  3 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "##Slackware"; tag = "LiberaChat"; }); };
+  4 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "##slackware-offtopic"; tag = "LiberaChat"; }); };
+  5 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#Linux"; tag = "LiberaChat"; }); };
+  6 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#bash"; tag = "LiberaChat"; }); };
+  7 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#git"; tag = "LiberaChat"; }); };
+  8 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#neovim"; tag = "LiberaChat"; }); };
+  9 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#python"; tag = "LiberaChat"; }); };
+  10 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#django"; tag = "LiberaChat"; }); };
+  11 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#perl"; tag = "LiberaChat"; }); };
+  12 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#javascript"; tag = "LiberaChat"; }); };
+  13 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#mariadb"; tag = "LiberaChat"; }); };
+  14 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#neomutt"; tag = "LiberaChat"; }); };
+  15 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#newsboat"; tag = "LiberaChat"; }); };
+  16 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#truenas"; tag = "LiberaChat"; }); };
+  17 = { items = ( { type = "CHANNEL"; chat_type = "IRC"; name = "#irssi"; tag = "LiberaChat"; }); };
 };
 mainwindows = { 1 = { first_line = "1"; lines = "29"; }; };
 chatnets = {
