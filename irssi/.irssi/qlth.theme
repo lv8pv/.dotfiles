@@ -207,7 +207,8 @@ abstracts = {
   # default background for all statusbars. You can also give
   # the default foreground color for statusbar items.
   #  sb_background = "%4%w";
-  sb_background = "%0%W";
+  #sb_background = "%0%W";
+  sb_background = "%N";
 
   # default backround for "default" statusbar group
   #sb_default_bg = "%4";
