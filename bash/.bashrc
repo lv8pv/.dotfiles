@@ -232,7 +232,6 @@ PLATFORM="$(uname -s)"
 # PROMPT_COMMAND="__nanorc_prompt_command; __ssh_agent_prompt_command; __git_prompt_command"
 # The commands to execute before the prompt is displayed.
 PROMPT_COMMAND="__git_prompt_command"
-#
 # Git prompt options.
 GIT_PROMPT_SHOW_TYPE=1
 GIT_PROMPT_SHOW_UPSTREAM=1
@@ -296,7 +295,9 @@ hash bat >/dev/null 2>&1 && alias cat="bat --paging=never --style='plain' -pp $*
 hash git >/dev/null 2>&1 && alias gl="git log --all --graph"
 hash git >/dev/null 2>&1 && alias gis="git status"
 hash neomutt>/dev/null 2>&1 && alias mutt="neomutt"
+hash dircolors >/dev/null 2>&1 && eval "$(dircolors -b "$HOME/.dir_colors")"
 alias du='du -h'
+alias ndoc='vim /home/lv8pv/doc/sysadm/.'
 
 # Alias for lynx default lynx_cookies to /dev/null
 alias lynx='lynx -vikeys -accept_all_cookies -cookie_file=/dev/null'
@@ -305,13 +306,9 @@ alias lynxy='lynx -vikeys -accept_all_cookies -cookie_file=~/.lynx_cookies'
 
 #alias cat="bat --paging=never -pp --style='plain' --theme=TwoDark $*"
 
-##############################
-/usr/bin/xset r rate 220 60
-# Disable the Caps lock key
-/usr/bin/setxkbmap -option "ctrl:nocaps"
-# Disable `Insert` key as it is broken and trigger when hitting `backspace`
-/usr/bin/xmodmap -e 'keycode 118 = '
-
+# Disable CTRL + S (suspend terminal)
+# This helps with using CTRL + S in history
+stty -ixon
 
 # Paste image from CLI to imagebin.ca - got this from Tadgy
 imagebin() {
@@ -346,15 +343,12 @@ HISTIGNORE="bg:bg *:fg:fg *:jobs:exit:clear:history"
 HISTSIZE=-1
 HISTTIMEFORMAT="%d/%m/%y %H:%M:%S  "
 history -r
-# Dissable CTRL + S (suspend terminal) This helps with using CTRL + S in history
-stty -ixon
-
 
 
 vi() { nvim "$@"; }
 vim() { nvim "$@"; }
 
-# My PS1 prompth
+# My old PS1 prompt before git-prompt. Let's keep if needed later.
 # git_branch() {
 #   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 # }
@@ -365,8 +359,6 @@ export VISUAL=nvim
 export EDITOR=nvim
 export PAGER=bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-# export TERM=screen-256color
-# export TERM=xterm-color
 export TERM='xterm-256color'
 export -f vi
 #export LESSOPEN="| grep -P 'alias|$' --color=always %s"
