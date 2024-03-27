@@ -56,6 +56,9 @@ bindsym $mod+Shift+q kill
 bindsym $mod+p exec mpad.sh 1
 bindsym $mod+shift+p exec mpad.sh 0
 
+bindsym $mod+n exec setxkbmap -layout no
+bindsym $mod+g exec setxkbmap -layout gb
+
 # start dmenu (a program launcher)
 bindsym $mod+m exec passmenu
 
@@ -248,7 +251,7 @@ bindsym $mod+x exec i3lock
 
 
 # Assign programs default workspace
-for_window [class="firefox"] move to workspace $ws2
+for_window [class="firefox" window_type="normal"] move to workspace $ws2
 for_window [class="Spotify"] move to workspace $ws8
 for_window [class="blueman-manager"] move to workspace $ws9
 for_window [class="^.*"] border pixel 1
