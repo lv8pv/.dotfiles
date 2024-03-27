@@ -1,3 +1,12 @@
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "/home/lv8pv/.config/alacritty/catppuccin-mocha.toml"
+  "/home/lv8pv/.config/alacritty/nightfox.toml"
+]
+
 live_config_reload = true
 working_directory = "/home/lv8pv"
 
@@ -36,6 +45,8 @@ decorations = "none"
 dynamic_title = true
 opacity = 1.0
 title = "Alacritty"
+
+#background = "#00005f"
 
 [window.dimensions]
 columns = 0
